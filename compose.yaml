@@ -1,7 +1,7 @@
 version: "3.3"
 
 services:
-  # バックエンド
+  # Webサーバ
   php:
     image: php:8-apache-bullseye
     volumes:
