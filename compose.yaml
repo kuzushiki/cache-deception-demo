@@ -1,0 +1,18 @@
+version: "3.3"
+
+services:
+  # バックエンド
+  php:
+    image: php:8-apache-bullseye
+    volumes:
+      - ./src:/var/www/html
+
+  # キャッシュ目的のプロキシサーバ
+  nginx:
+    build: ./nginx
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - php
+    ports:
+      - "12345:80"
