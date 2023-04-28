@@ -44,4 +44,4 @@ http://localhost:12345/index.php/hogehoge.css
 
 6. 手順4でアクセスしたURLにシークレットウィンドウでアクセス。管理者ページのコンテンツが返ってくることを確認
 
-7. Cookirの値を管理者ページ内の`PHPSESSID`の値に差し替えると管理者になりすませる (いわゆるAccount Takeover)
+7. Cookieの値を管理者ページ内の`PHPSESSID`の値に差し替えると管理者になりすませる (いわゆるAccount Takeover)
